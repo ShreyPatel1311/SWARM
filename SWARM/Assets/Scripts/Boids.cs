@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 
 public class Boids : MonoBehaviour
@@ -14,7 +13,7 @@ public class Boids : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -30,7 +29,7 @@ public class Boids : MonoBehaviour
     private bool DetectNearbyBoidsOrObstacles()
     {
         RaycastHit hit;
-        if(Physics.SphereCast(transform.position, boidLength, transform.forward, out hit, perceptionRadius))
+        if (Physics.SphereCast(transform.position, boidLength, transform.forward, out hit, perceptionRadius))
         {
             return true;
         }
